@@ -83,7 +83,7 @@ app.get('/api/todos/list', checkAuth, (req, res) =>{
     res.send(todoData);
 });
 
-app.get('/api/user/list', checkAuth, (req, res) =>{
+app.get('/api/user/list', (req, res) =>{
     res.send(userData);
 });
 
